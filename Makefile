@@ -11,3 +11,6 @@ compose-up:
 	docker-compose up --build
 
 check: tests lint
+
+install:
+	poetry install

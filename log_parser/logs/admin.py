@@ -5,6 +5,10 @@ from log_parser.logs.models import LogEntry
 
 @admin.register(LogEntry)
 class LogEntryAdmin(admin.ModelAdmin):
+    """
+    Admin interface for managing LogEntry objects in the Django admin panel.
+    """
+
     list_display = (
         'ip_address',
         'request_method',
